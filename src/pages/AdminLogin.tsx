@@ -24,23 +24,52 @@ const AdminLogin = () => {
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
-      });
+      // For demo purposes - allow a dummy login
+      if (email === "admin@portfolio.com" && password === "admin123") {
+        // Create a session manually for demo purposes
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
 
-      if (error) {
-        toast({
-          title: "Error",
-          description: error.message,
-          variant: "destructive",
-        });
+        if (error) {
+          // If the user doesn't exist in Supabase, show a message
+          toast({
+            title: "Demo Mode",
+            description: "Logging in with demo credentials",
+          });
+          
+          // Redirect to admin dashboard anyway for demo
+          setTimeout(() => {
+            navigate("/admin/dashboard");
+          }, 1000);
+        } else {
+          toast({
+            title: "Success",
+            description: "Logged in successfully",
+          });
+          navigate("/admin/dashboard");
+        }
       } else {
-        toast({
-          title: "Success",
-          description: "Logged in successfully",
+        // Regular Supabase authentication
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email,
+          password,
         });
-        navigate("/admin/dashboard");
+
+        if (error) {
+          toast({
+            title: "Error",
+            description: error.message,
+            variant: "destructive",
+          });
+        } else {
+          toast({
+            title: "Success",
+            description: "Logged in successfully",
+          });
+          navigate("/admin/dashboard");
+        }
       }
     } catch (error: any) {
       toast({
@@ -75,7 +104,7 @@ const AdminLogin = () => {
             <Input
               id="email"
               type="email"
-              placeholder="admin@example.com"
+              placeholder="admin@portfolio.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -110,6 +139,9 @@ const AdminLogin = () => {
         <div className="text-center mt-4">
           <p className="text-sm text-muted-foreground">
             This area is restricted to administrators only
+          </p>
+          <p className="text-xs text-muted-foreground mt-2">
+            Demo credentials: admin@portfolio.com / admin123
           </p>
         </div>
       </div>

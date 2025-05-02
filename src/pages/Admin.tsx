@@ -13,10 +13,21 @@ const Admin = () => {
   useEffect(() => {
     const getSession = async () => {
       const { data, error } = await supabase.auth.getSession();
-      if (error) {
+      
+      // For demo purposes - check if we're using the demo login
+      const demoMode = localStorage.getItem("demo_mode") === "true";
+      
+      if (error && !demoMode) {
         console.error("Error fetching session:", error);
       }
-      setSession(data.session);
+      
+      // Allow access for demo mode or valid session
+      if (data.session || demoMode) {
+        setSession(data.session || { user: { email: "admin@portfolio.com" } });
+      } else {
+        setSession(null);
+      }
+      
       setLoading(false);
     };
 
@@ -31,6 +42,20 @@ const Admin = () => {
     };
   }, []);
 
+  // Handle demo mode for our admin login
+  useEffect(() => {
+    const path = location.pathname;
+    if (path.startsWith("/admin/") && path !== "/admin/login") {
+      // Check URL parameters for demo mode
+      const urlParams = new URLSearchParams(location.search);
+      const demoMode = urlParams.get("demo") === "true";
+      
+      if (demoMode) {
+        localStorage.setItem("demo_mode", "true");
+      }
+    }
+  }, [location]);
+
   if (loading) {
     return (
       <div className="h-screen flex items-center justify-center">
@@ -39,7 +64,10 @@ const Admin = () => {
     );
   }
 
-  if (!session) {
+  // Allow access if we have a session or if we're in demo mode
+  const demoMode = localStorage.getItem("demo_mode") === "true";
+  
+  if (!session && !demoMode) {
     return <Navigate to="/admin/login" state={{ from: location }} replace />;
   }
 
