@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,8 +17,15 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section id="home" className="min-h-screen flex items-center py-20 relative overflow-hidden">
+    <section id="home" className="h-screen flex items-center relative overflow-hidden">
       {/* Code background animation */}
       <div className="code-vertical left-4 top-0 animate-code-flow">
         {Array.from({ length: 50 }).map((_, i) => (
@@ -37,7 +45,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row md:items-center">
         <div className="w-full md:w-3/5 space-y-6 md:pr-10 z-10">
           <div className={`transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <p className="text-neon-purple font-jetbrains mb-2">Hello, my name is</p>
+            <p className="text-neon-purple font-jetbrains mb-2">HELLO, MY NAME IS</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 relative inline-block overflow-hidden whitespace-nowrap">
               <span className="animate-typing text-glow">Hamza Aslam</span>
               <span className="animate-cursor-blink border-r-4 border-neon-purple absolute ml-1"></span>
@@ -54,17 +62,26 @@ const Hero = () => {
           </div>
           
           <div className={`flex gap-4 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <Button className="bg-neon-purple hover:bg-neon-purple/80 text-white">View Projects</Button>
-            <Button variant="outline" className="border-neon-purple text-neon-purple hover:bg-neon-purple/10">
+            <Button 
+              className="bg-neon-purple hover:bg-neon-purple/80 text-white" 
+              onClick={() => scrollToSection("projects")}
+            >
+              View Projects
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-neon-purple text-neon-purple hover:bg-neon-purple/10"
+              onClick={() => scrollToSection("contact")}
+            >
               Contact Me
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
         
-        <div className="w-full md:w-2/5 mt-12 md:mt-0 flex justify-center z-10">
+        <div className="w-full md:w-2/5 mt-8 md:mt-0 flex justify-center z-10">
           <div className={`transition-all duration-1000 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            {/* Placeholder for profile image with glowing effect */}
+            {/* Profile image with glowing effect */}
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neon-purple to-neon-blue blur-lg opacity-30 animate-pulse"></div>
               <div className="h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden border-2 border-neon-purple/30 relative z-10">
