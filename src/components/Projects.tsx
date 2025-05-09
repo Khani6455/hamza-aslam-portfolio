@@ -34,6 +34,17 @@ const Projects = () => {
       live: "https://example.com",
       github: "https://github.com/example/repo",
     },
+
+    {
+      title: "Live Cricket Updates & Streaming",
+      description: "A website providing live cricket score updates using a Cric API, along with live streaming links for PTV and Star Sports. Built using only HTML, CSS, and JavaScript.",
+      image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcIqsZ9Dw4jzTuIU6Jq1A81QxebYzGJQQ0ljS1bTHqf1l3uivOfvb3NERuMt58uoCU_FTXPPtcdeZP29H7KhpvJfi4j57lHmwQl4042llBSHZgu_kcjNCY7DCH6U0g9jA-nZ3u_Z2YUxISYbw3sX765nJEXEkGR69v1jORm7WMXkQekaPpPxWkKexEKhft/s320/ae4b5d24-8588-42ac-aaf7-7a3bd2448a30.png",
+
+      tech: ["HTML", "CSS", "JavaScript", "Cric API"],
+      live: "https://khani6455.github.io/cricArena/", // Replace with your live site URL
+      github: "https://github.com/Khani6455/cricArena", // Replace with your GitHub repo URL
+    },
+
     {
       title: "Task Management App",
       description: "Collaborative task management tool with real-time updates, user permissions, and progress tracking.",

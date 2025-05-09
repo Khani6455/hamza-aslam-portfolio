@@ -59,7 +59,7 @@ const Contact = () => {
   const socialLinks = [
     { name: "GitHub", icon: <Github className="h-6 w-6" />, href: "https://github.com/" },
     { name: "LinkedIn", icon: <Linkedin className="h-6 w-6" />, href: "https://linkedin.com/in/" },
-    { name: "Email", icon: <Mail className="h-6 w-6" />, href: "mailto:contact@hamzaaslam.com" },
+    { name: "Email", icon: <Mail className="h-6 w-6" />, href: "mailto:hamzaaslam645555@gmail.com" },
   ];
 
   return (

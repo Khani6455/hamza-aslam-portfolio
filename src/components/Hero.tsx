@@ -86,7 +86,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-neon-purple to-neon-blue blur-lg opacity-30 animate-pulse"></div>
               <div className="h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden border-2 border-neon-purple/30 relative z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://shorturl.at/mf9ww"
                   alt="Hamza Aslam"
                   className="object-cover w-full h-full"
                 />
