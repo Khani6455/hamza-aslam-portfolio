@@ -45,14 +45,15 @@ const Projects = () => {
       github: "https://github.com/Khani6455/cricArena", // Replace with your GitHub repo URL
     },
 
-    {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates, user permissions, and progress tracking.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      tech: ["React", "Firebase", "Tailwind CSS", "Redux"],
-      live: "https://example.com",
-      github: "https://github.com/example/repo",
-    },
+   {
+  title: "React Admin Dashboard Template",
+  description: "A modern and responsive admin dashboard built with React, Vite, and TypeScript. Features include Firebase authentication, real-time data integration, responsive UI with Tailwind CSS, and reusable component structure—perfect as a starter template for admin panels and CMS apps.",
+  image: "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3", // You can replace this with your actual app screenshot URL
+  tech: ["React", "Vite", "TypeScript", "Firebase", "Tailwind CSS"],
+  live: "https://react-admin-starter-kit.onrender.com/dashboard", // Change if different
+  github: "https://github.com/Khani6455/hamza-aslam-portfolio", // Replace with your actual GitHub repo link
+},
+
     {
       title: "Weather Dashboard",
       description: "Interactive weather application with forecast data, location search, and responsive visualizations.",
