@@ -50,7 +50,7 @@ const Projects = () => {
   description: "A modern and responsive admin dashboard built with React, Vite, and TypeScript. Features include Firebase authentication, real-time data integration, responsive UI with Tailwind CSS, and reusable component structure—perfect as a starter template for admin panels and CMS apps.",
   image: "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3", // You can replace this with your actual app screenshot URL
   tech: ["React", "Vite", "TypeScript", "Firebase", "Tailwind CSS"],
-  live: "https://react-admin-starter-kit.onrender.com/dashboard", // Change if different
+  live: "https://react-admin-starter-kit.onrender.com", // Change if different
   github: "https://github.com/Khani6455/hamza-aslam-portfolio", // Replace with your actual GitHub repo link
 },
 
