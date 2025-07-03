@@ -55,13 +55,13 @@ const Projects = () => {
 },
 
     {
-      title: "Weather Dashboard",
-      description: "Interactive weather application with forecast data, location search, and responsive visualizations.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      tech: ["React", "WeatherAPI", "Chart.js", "Styled Components"],
-      live: "https://example.com",
-      github: "https://github.com/example/repo",
-    },
+  title: "AI Text Summarizer",
+  description: "AI-powered tool that instantly summarizes long articles, documents, or web pages. Users can paste text, enter URLs, and download summaries as PDFs.",
+  image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  tech: ["Python", "Flask", "OpenAI API", "BeautifulSoup (Web Scraping)", "PDFKit", "HTML/CSS"],
+  live: "https://summarizeai-tl8h.onrender.com/",
+  github: "https://github.com/Khani6455/Summarizeai",
+},
   ];
 
   return (
