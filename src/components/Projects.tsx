@@ -47,7 +47,7 @@ const Projects = () => {
     {
   title: "Sport Stream Site",
   description: "An immersive and modern web application that brings all your favorite live TV sports channels to one place. From cricket to football, experience uninterrupted streaming with a sleek interface and blazing-fast performance. Built using React, Vite, and Tailwind CSS, and powered by the REE Feed API for real-time data.",
-  image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUFBTUkqC2ztEjMmONjGGpvM4a6a7XwHgc8mvhbZYffJvZIdThURVIbTks5aeZCE2CIlPdbQgdnMViqZ3LUZz_8w7MpXJEDf-DZf9gJuw_EAODLh0U8QMGzls0psnHuqFJGJXnKJc_qogAsCGFLQ8oYqQAdqTFbX-L2v3UenNH9N0a1-ZRgSpKCVgvKUI/s320/sportstream.png",
+  image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD5kyweSfsEaydNaxt5RFjVefvpelzb24fYR1xfoj5KlvQCsX2TPGOQ8ATDGSS4K6sMaDCosUuk0uaSNZir099U1tY1FYxnXYXULnVb7sIBmcO5nv4-ltSZzQszKLJe4pFGC92oSTj-BB2COk0eivkHFs6dsORUKyr8teSJeMZXF-uT-RR1yi5x6wtD0nZ/s1349/Screenshot%202025-08-01%20233238.png",
   tech: ["React", "Vite", "Tailwind CSS", "REE Feed API"],
   live: "https://sportstream.onrender.com/",
   github: "https://github.com/Khani6455/sportstream", // Replace if different
