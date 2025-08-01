@@ -44,6 +44,14 @@ const Projects = () => {
       live: "https://khani6455.github.io/cricArena/", // Replace with your live site URL
       github: "https://github.com/Khani6455/cricArena", // Replace with your GitHub repo URL
     },
+    {
+  title: "Sport Stream Site",
+  description: "An immersive and modern web application that brings all your favorite live TV sports channels to one place. From cricket to football, experience uninterrupted streaming with a sleek interface and blazing-fast performance. Built using React, Vite, and Tailwind CSS, and powered by the REE Feed API for real-time data.",
+  image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUFBTUkqC2ztEjMmONjGGpvM4a6a7XwHgc8mvhbZYffJvZIdThURVIbTks5aeZCE2CIlPdbQgdnMViqZ3LUZz_8w7MpXJEDf-DZf9gJuw_EAODLh0U8QMGzls0psnHuqFJGJXnKJc_qogAsCGFLQ8oYqQAdqTFbX-L2v3UenNH9N0a1-ZRgSpKCVgvKUI/s320/sportstream.png",
+  tech: ["React", "Vite", "Tailwind CSS", "REE Feed API"],
+  live: "https://sportstream.onrender.com/",
+  github: "https://github.com/Khani6455/sportstream", // Replace if different
+},
 
    {
   title: "React Admin Dashboard Template",
