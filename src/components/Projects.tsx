@@ -50,7 +50,7 @@ const Projects = () => {
   image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD5kyweSfsEaydNaxt5RFjVefvpelzb24fYR1xfoj5KlvQCsX2TPGOQ8ATDGSS4K6sMaDCosUuk0uaSNZir099U1tY1FYxnXYXULnVb7sIBmcO5nv4-ltSZzQszKLJe4pFGC92oSTj-BB2COk0eivkHFs6dsORUKyr8teSJeMZXF-uT-RR1yi5x6wtD0nZ/s1349/Screenshot%202025-08-01%20233238.png",
   tech: ["React", "Vite", "Tailwind CSS", "REE Feed API"],
   live: "https://sportstream.onrender.com/",
-  github: "https://github.com/Khani6455/sportstream", // Replace if different
+  github: "https://github.com/sportstream", // Replace if different
 },
 
    {
